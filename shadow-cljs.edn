@@ -5,7 +5,11 @@
   "src/test"]
 
  :dependencies
- []
+ [[reagent "1.3.0"]]
+
+ :dev-http {8080 "public"}
 
  :builds
- {}}
+ {:tetris
+  {:target :browser
+   :modules {:tetris {:init-fn tetris/init}}}}}
